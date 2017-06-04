@@ -1,3 +1,9 @@
 <h1>
-  {{title}}
+ <app-my-component></app-my-component>
+   {{count}}<button (click)="count=count+1">Click me</button>
+ <br>
+   <img [src]="imgSource" alt="" disabled  >
+   <br>
+   <input type="text" [disabled]="disabled" >
+   <button (click)="disabled=!disabled">Disabled input</button>
 </h1>
